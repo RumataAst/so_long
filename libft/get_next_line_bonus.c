@@ -6,31 +6,31 @@
 /*   By: akretov <akretov@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 18:47:46 by akretov           #+#    #+#             */
-/*   Updated: 2024/01/12 14:50:18 by akretov          ###   ########.fr       */
+/*   Updated: 2024/06/05 18:46:22 by akretov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "include/get_next_line_bonus.h"
 
-char	*ft_strdup(const char *s)
-{
-	size_t		i;
-	size_t		j;
-	char		*temp;
+// char	*ft_strdup(const char *s)
+// {
+// 	size_t		i;
+// 	size_t		j;
+// 	char		*temp;
 
-	i = ft_strlen(s);
-	j = 0;
-	temp = (char *)malloc(sizeof (char) * i + 1);
-	if (!temp)
-		return (0);
-	while (j < i)
-	{
-		temp[j] = s[j];
-		j++;
-	}
-	temp[i] = '\0';
-	return (temp);
-}
+// 	i = ft_strlen(s);
+// 	j = 0;
+// 	temp = (char *)malloc(sizeof (char) * i + 1);
+// 	if (!temp)
+// 		return (0);
+// 	while (j < i)
+// 	{
+// 		temp[j] = s[j];
+// 		j++;
+// 	}
+// 	temp[i] = '\0';
+// 	return (temp);
+// }
 
 static char	*extract(char *line)
 {
